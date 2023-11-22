@@ -28,3 +28,4 @@
 /composer.lock
 /package-lock.json
 /snap
+/.zsh_history
