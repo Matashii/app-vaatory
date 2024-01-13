@@ -13,7 +13,7 @@
                         <div class="p-6 text-gray-900 dark:text-gray-100 text-center">
                             <img src="{{ asset('pictures/Vaatory.png') }}" alt="Logo" class="mx-auto h-32 w-auto" />
                             <!-- Remplacez 'images/Vaatory.png' par le chemin correct de votre image -->
-                            {{ __("Welcome ") }} {{ Auth::user()->name }} !
+                            {{ __("Iaorana ia 'oe  ") }} {{ Auth::user()->name }} !
                             <!-- Utilisation de Auth::user()->name pour récupérer le nom de l'utilisateur -->
                         </div>
                     </div>

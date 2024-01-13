@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RowerController;
+use App\Http\Controllers\SeanceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,5 +38,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/rower/{id}/edit', [RowerController::class, 'edit'])->name('rower.edit');
     Route::put('/rower/{id}', [RowerController::class, 'update'])->name('rower.update');
     Route::delete('/rower/{id}', [RowerController::class, 'destroy'])->name('rower.destroy');
+
+Route::resource('seances', SeanceController::class);
+Route::get('/seances', [SeanceController::class, 'index'])->name('seances.index');
 
 require __DIR__.'/auth.php';
